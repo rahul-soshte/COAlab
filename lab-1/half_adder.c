@@ -61,7 +61,10 @@ scanf("%d",&b);
 
 
 for(i=0;i<4;i++){
-bit3_sum=aexorb(a/power(10,i),b/power(10,i));
+
+	a=a/power(10,i);
+	b=b/power(10,i);
+bit3_sum=aexorb(a,b);
 
 bit3_carry=aandb(a,b);
 
